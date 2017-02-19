@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<html>
+    <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+      <link href="//fonts.googleapis.com/css?family=Pacifico&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Sansita&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Abel&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link href="//fonts.googleapis.com/css?family=Quicksand&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <title>Miss Layodi's Blog</title>
+    </head>
+    <body>
+      <div class="page-header">
+        <center>
+        <h1><a href="/">Miss Layodi</a></h1>
+      </center>
+      </div>
+      <div class="content container">
+        <div class="row">
+          <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
